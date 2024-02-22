@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #black{
+            width: 100;
+            height: 100vh;
+            background-color:  #050210;
+        }
+        #bl{
+            position: absolute;
+           bottom: 45px;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            background-color: black;
+            border-radius: 100%;
+
+            animation-name: negru;
+            animation-duration: 1s;
+            animation-timing-function:ease-in;
+            animation-iteration-count: infinite;
+
+        }
+        
+
+
+        
+
+        #color{
+            position: absolute;
+            bottom: 24px;
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+            border-radius: 100%;
+            box-shadow: #fb5dad;
+            
+           
+            animation-name: fil;
+            animation-duration: 1s;
+            animation-timing-function:ease-in;
+            animation-iteration-count: infinite
+            
+
+        }
+        @keyframes fil{
+            from{
+            
+                filter: hue-rotate(40deg) ;
+                box-shadow: #fb5dad 20px;
+            }
+            to{
+                filter: hue-rotate(1000deg);
+            }
+        }
+        
+        @keyframes negru{
+            10% {background-color: #141025d1;}
+            50%{background-color: #050210c7;}
+            75%{background-color: #050210f1;}
+            100%{background-color: #000000;}
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="black">
+        <div id="color">
+            <div id="bl"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
